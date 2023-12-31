@@ -1,6 +1,6 @@
 def pass_validator(pass_word):
     valid_counter = 0
-    
+
     if len(pass_word) < 6 or len(pass_word) > 10:
         print("Password must be between 6 and 10 characters")
     else:

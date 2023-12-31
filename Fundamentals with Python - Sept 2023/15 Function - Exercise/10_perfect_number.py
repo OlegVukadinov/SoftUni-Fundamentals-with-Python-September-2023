@@ -1,12 +1,12 @@
-def perfect_number(num:int):
-    sum_counter = 0
-    for cur_num in range(1, num):
-        if num % cur_num == 0 and cur_num > 0:
-            sum_counter += cur_num
-    if num == sum_counter:
-        return "We have a perfect number!"
+def perf_number(some_number):
+    sum = 0
+    for divisor in range(1,some_number):
+        if some_number % divisor == 0:
+            sum += divisor
+    if sum == some_number:
+        print("We have a perfect number!")
     else:
-        return "It's not so perfect."
+        print("It's not so perfect.")
 
 number = int(input())
-print(perfect_number(number))
+perf_number(number)
